@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  cidade_id: 
+  descricao: MyString
+  detalhes: MyString
+  validade: 2014-07-26
+
+two:
+  user_id: 
+  cidade_id: 
+  descricao: MyString
+  detalhes: MyString
+  validade: 2014-07-26
