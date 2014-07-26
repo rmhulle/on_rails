@@ -1,6 +1,5 @@
-<h1>Editing check_in</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @check_in %> |
-<%= link_to 'Back', check_ins_path %>
+<%- model_class = CheckIn -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => CheckIn %></h1>
+</div>
+<%= render :partial => 'form' %>
