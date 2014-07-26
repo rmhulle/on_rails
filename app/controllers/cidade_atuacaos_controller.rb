@@ -29,6 +29,7 @@ class CidadeAtuacaosController < ApplicationController
   # POST /cidade_atuacaos.json
   def create
     @cidade_atuacao = CidadeAtuacao.new(cidade_atuacao_params)
+    @cidade_atuacao.user = current_user
 
     respond_to do |format|
       if @cidade_atuacao.save
