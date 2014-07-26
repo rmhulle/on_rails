@@ -1,6 +1,5 @@
-<h1>Editing cidade_atuacao</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @cidade_atuacao %> |
-<%= link_to 'Back', cidade_atuacaos_path %>
+<%- model_class = CidadeAtuacao -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => CidadeAtuacao %></h1>
+</div>
+<%= render :partial => 'form' %>
