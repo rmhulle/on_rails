@@ -29,6 +29,7 @@ class CheckInsController < ApplicationController
   # POST /check_ins.json
   def create
     @check_in = CheckIn.new(check_in_params)
+    @check_in.user = current_user
 
     respond_to do |format|
       if @check_in.save
