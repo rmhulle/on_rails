@@ -29,6 +29,7 @@ class DemandasController < ApplicationController
   # POST /demandas.json
   def create
     @demanda = Demanda.new(demanda_params)
+    @demanda.user = current_user
 
     respond_to do |format|
       if @demanda.save
