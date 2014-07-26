@@ -1,17 +1,40 @@
-<%= simple_form_for(@demanda) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.association :cidade %>
-    <%= f.association :user %>
-    <%= f.input :descricao %>
-    <%= f.input :validade %>
-    <%= f.input :cidade_origem %>
-    <%= f.input :correspondente %>
-    <%= f.input :status %>
+<%= form_for @demanda, :html => { :class => 'form-horizontal form-model' } do |f| %>
+  <div class="form-group">
+    <%= f.label :descricao, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :descricao, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :validade, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.date_select :validade, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cidade_origem, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cidade_origem, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :correspondente, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :correspondente, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :status, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :status, :class => 'text-field form-control' %>
+    </div>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  demandas_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 <% end %>
