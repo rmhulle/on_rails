@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :check_ins
+
   resources :cidades
 
   resources :demandas do

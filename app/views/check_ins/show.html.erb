@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @check_in.user %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @check_in.cidade %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @check_in.descricao %>
+</p>
+
+<p>
+  <strong>Detalhes:</strong>
+  <%= @check_in.detalhes %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @check_in.validade %>
+</p>
+
+<%= link_to 'Edit', edit_check_in_path(@check_in) %> |
+<%= link_to 'Back', check_ins_path %>
