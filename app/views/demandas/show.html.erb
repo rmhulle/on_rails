@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @demanda.cidade %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @demanda.user %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @demanda.descricao %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @demanda.validade %>
+</p>
+
+<p>
+  <strong>Cidade origem:</strong>
+  <%= @demanda.cidade_origem %>
+</p>
+
+<p>
+  <strong>Correspondente:</strong>
+  <%= @demanda.correspondente %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @demanda.status %>
+</p>
+
+<%= link_to 'Edit', edit_demanda_path(@demanda) %> |
+<%= link_to 'Back', demandas_path %>

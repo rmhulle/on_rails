@@ -1,0 +1,17 @@
+<%= simple_form_for(@demanda) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :cidade %>
+    <%= f.association :user %>
+    <%= f.input :descricao %>
+    <%= f.input :validade %>
+    <%= f.input :cidade_origem %>
+    <%= f.input :correspondente %>
+    <%= f.input :status %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
