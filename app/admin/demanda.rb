@@ -1,4 +1,5 @@
 ActiveAdmin.register Demanda do
+  permit_params :descricao, :validade, :cidade_origem, :correspondente, :status
 
   
   # See permitted parameters documentation:
