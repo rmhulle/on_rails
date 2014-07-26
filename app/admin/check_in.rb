@@ -1,4 +1,5 @@
 ActiveAdmin.register CheckIn do
+  permit_params :descricao, :detalhes, :validade
 
   
   # See permitted parameters documentation:
