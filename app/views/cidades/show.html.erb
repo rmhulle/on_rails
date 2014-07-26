@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cidade nome:</strong>
+  <%= @cidade.cidade_nome %>
+</p>
+
+<p>
+  <strong>Estado long:</strong>
+  <%= @cidade.estado_long %>
+</p>
+
+<p>
+  <strong>Estado short:</strong>
+  <%= @cidade.estado_short %>
+</p>
+
+<%= link_to 'Edit', edit_cidade_path(@cidade) %> |
+<%= link_to 'Back', cidades_path %>

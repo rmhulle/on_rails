@@ -1,0 +1,13 @@
+<%= simple_form_for(@cidade) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :cidade_nome %>
+    <%= f.input :estado_long %>
+    <%= f.input :estado_short %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
