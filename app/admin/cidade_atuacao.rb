@@ -1,4 +1,5 @@
 ActiveAdmin.register CidadeAtuacao do
+  permit_params 
 
   
   # See permitted parameters documentation:
