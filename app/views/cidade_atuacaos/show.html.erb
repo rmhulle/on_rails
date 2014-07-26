@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @cidade_atuacao.user %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @cidade_atuacao.cidade %>
+</p>
+
+<%= link_to 'Edit', edit_cidade_atuacao_path(@cidade_atuacao) %> |
+<%= link_to 'Back', cidade_atuacaos_path %>

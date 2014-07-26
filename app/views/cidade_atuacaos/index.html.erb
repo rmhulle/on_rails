@@ -1,0 +1,27 @@
+<h1>Listing cidade_atuacaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Cidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cidade_atuacaos.each do |cidade_atuacao| %>
+      <tr>
+        <td><%= cidade_atuacao.user %></td>
+        <td><%= cidade_atuacao.cidade %></td>
+        <td><%= link_to 'Show', cidade_atuacao %></td>
+        <td><%= link_to 'Edit', edit_cidade_atuacao_path(cidade_atuacao) %></td>
+        <td><%= link_to 'Destroy', cidade_atuacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cidade atuacao', new_cidade_atuacao_path %>
